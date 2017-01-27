@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+
+{% block title %}Your Trip{% endblock %}
+
+{% block content %}
+
+<div id="app" class="clearfix">
+    <div class="nav-bar">
+        <h1>Trip Planner</h1>
+        <ul>
+            <li class='selected'>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div id="gmap" class="gmap">
+        <img src='http://static6.businessinsider.com/image/52bc4a82eab8eada3e6949eb-1169-743/screen%20shot%202013-12-26%20at%209.52.57%20am.png' />
+    </div>
+
+    <div class='options-container'>
+        <div class='options-1'>
+            <form>
+                <label for='hotels'>Hotels</label>
+                <select id='hotels'>
+
+                </select>
+                <label for='restaurants'>Restaurants</label>
+                <select id='restaurants'>
+
+                </select>
+                <label for='activites'>Things To Do</label>
+                <select id='activities'>
+
+                </select>
+            </form>
+        </div>
+        <div class='options-2'>
+            <div class='button-container'>
+                <button>1</button>
+                <button class='selected'>2</button>
+                <button>3</button>
+                <button>+</button>
+            </div>
+            <div class='details'>
+                <h3>My Hotel</h3>
+                <ul>
+                    <li>Andaz Wall Street</li>
+                </ul>
+                <h3>My Restaurants</h3>
+                <ul>
+                    <li>Applebees</li>
+                </ul>
+                <h3>My Activities</h3>
+                <ul>
+                    <li>Ground Zero</li>
+                    <li>South Street Seaport</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+{% endblock %}

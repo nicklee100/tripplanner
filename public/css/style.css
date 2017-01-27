@@ -1,0 +1,109 @@
+.nav-bar {
+    background-color: #0099cc;
+    color: #E0FFFF;
+}
+
+.nav-bar h1,
+.nav-bar ul {
+    line-height: 24px;
+    margin: 1rem 0;
+}
+
+.gmap,
+.options-container {
+    float: left;
+}
+
+.gmap img {
+    width: 100%;
+}
+
+.nav-bar h1 {
+    font-size: 24px;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: inline-block;
+}
+
+.nav-bar li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.gmap {
+    width: 75%;
+}
+
+.options-container {
+    width: 20%;
+    background-color: #eff5ff;
+    padding: 1rem;
+}
+
+.options-1 {
+    margin-bottom: 1rem;
+}
+
+.options-container form,
+.options-2 {
+    border-radius: 5px;
+    background-color: #c3ccdb;
+    padding: 1rem;
+}
+
+.options-container label,
+.options-container select {
+    display: block;
+}
+
+.options-container select {
+    width: 100%;
+    margin: .5rem 0 1rem;
+}
+
+.options-2 {
+    padding: 0;
+}
+
+.button-container {
+    background-color: #517ABC;
+    padding: .7rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.button-container button,
+.button-container .selected {
+    border: 1px solid white;
+}
+
+.button-container .selected {
+    background-color: white;
+    color: inherit;
+}
+
+.details {
+    padding: 1rem;
+}
+
+.button-container button {
+    border-radius: 50%;
+    background-color: inherit;
+    padding: .5rem .8rem;
+    color: #fff;
+}
+
+.options-2 ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.options-2 li {
+    margin-bottom: .3rem;
+}

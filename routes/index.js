@@ -14,7 +14,7 @@ router.get('/',function(req,res) {
 
     Promise.all([ActivityPromise, RestaurantPromise, HotelPromise])
     .then(function(data){
-        res.send(data);
+        res.render('index',{data:data});
     });
 });
 

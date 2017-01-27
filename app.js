@@ -3,13 +3,19 @@ const express = require('express'),
     bodyParser = require('body-parser'),
     morgan = require('morgan'),
     volleyball = require('volleyball'),
-    router = require('./routes');
+    router = require('./routes'),
+    nunjucks = require('nunjucks');
 
 app.use(morgan(console));
 app.use(volleyball);
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+
+app.engine('html', nunjucks.render);
+app.set('view engine', 'html');
+nunjucks.configure('views', {noCache: true});
 
 app.use(express.static('public'));
 
