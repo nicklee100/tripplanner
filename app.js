@@ -3,7 +3,7 @@ const express = require('express'),
     bodyParser = require('body-parser'),
     morgan = require('morgan'),
     volleyball = require('volleyball'),
-    router = require('./router');
+    router = require('./routes');
 
 app.use(morgan(console));
 app.use(volleyball);
@@ -13,18 +13,18 @@ app.use(bodyParser.json());
 
 app.use(express.static('public'));
 
-app.use(function(req, res, next) {
-    var err = new Error('Not Found');
-    err.status(404);
-    next(err);
-});
+// app.use(function(req, res, next) {
+//     var err = new Error('Not Found');
+//     err.status(404);
+//     next(err);
+// });
 
 app.use('/', router);
 
-app.use(function(err, req, res, next) {
-    res.status(err.status || 500);
-    console.error(err);
-    res.send(err);
-})
+// app.use(function(err, req, res, next) {
+//     res.status(err.status || 500);
+//     console.error(err);
+//     res.send(err);
+// })
 
 app.listen(3000);
